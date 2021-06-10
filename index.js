@@ -1,6 +1,7 @@
 function getWidth() {
     if (this._currentBrowserWidth == "none") {
         let width = window.innerWidth > 0 ? window.innerWidth : screen.width;
+
         if (width < 576) {
             this._currentBrowserWidth = "xs";
         } else if (width >= 576 && width < 768) {
@@ -16,7 +17,8 @@ function getWidth() {
         } else if (width >= 1920) {
             this._currentBrowserWidth = "xxxl";
         }
-    } else return this._currentBrowserWidth;
+    }
+    return this._currentBrowserWidth;
 }
 
 export default {

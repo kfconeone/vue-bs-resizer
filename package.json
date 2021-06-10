@@ -1,6 +1,6 @@
 {
     "name": "vue-bs-resizer",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "vue resizer for bootstrap breakpoints",
     "main": "index.js",
     "author": "Dashing",
