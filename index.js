@@ -52,7 +52,7 @@ export default {
             }
 
             if (originWidth != resizer._currentBrowserWidth) {
-                Object.values(resizer.onBreak).forEach(async (f) => f(resizer._currentBrowserWidth));
+                Object.values(resizer.onBreak).forEach(async (f) => await f(resizer._currentBrowserWidth));
             }
         };
     },
